@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Landscape Gallery</h1>
+        
+        <div class="image-slider-container">
+            
+            <div class="slider-wrapper position-relative">
+                <div id="imageSlider" class="image-slider">
+                    <div class="slide fade active">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1674647325071-49a139b1f495" alt="Mountain Range at Sunset" class="slider-image">
+                        </div>
+                        <div class="caption-container">
+                            <h3>Mountain Range at Sunset</h3>
+                            <p class="text-muted">Photo by Dmitry Bukhantsov</p>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1674647812339-dbcf20a9d268" alt="Misty Mountain Valley" class="slider-image">
+                        </div>
+                        <div class="caption-container">
+                            <h3>Misty Mountain Valley</h3>
+                            <p class="text-muted">Photo by Dmitry Bukhantsov</p>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1626238247302-2f3065c90ff5" alt="Serene Lake View" class="slider-image">
+                        </div>
+                        <div class="caption-container">
+                            <h3>Serene Lake View</h3>
+                            <p class="text-muted">Photo by Fareed Akhyear Chowdhury</p>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1731534679636-86d1d0c64198" alt="Forest Landscape" class="slider-image">
+                        </div>
+                        <div class="caption-container">
+                            <h3>Forest Landscape</h3>
+                            <p class="text-muted">Photo by Atif Haiqal</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <button class="nav-btn prev-btn" aria-label="Previous image">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn" aria-label="Next image">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            
+            <div class="thumbnails-container mt-3">
+                <div class="thumbnail active" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1674647325071-49a139b1f495" alt="Thumbnail 1">
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1674647812339-dbcf20a9d268" alt="Thumbnail 2">
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1626238247302-2f3065c90ff5" alt="Thumbnail 3">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1731534679636-86d1d0c64198" alt="Thumbnail 4">
+                </div>
+            </div>
+
+            
+            <div class="controls-container mt-3 text-center">
+                <button id="playPauseBtn" class="btn btn-outline-secondary">
+                    <i class="bi bi-pause-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>
